@@ -1,0 +1,138 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Game Design Portfolio</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="portfoliostyle.css">
+  
+  <script type="text/javascript">
+  
+  
+  var ekterText = 
+  "<h1>Ekter and The Cub</h1><p><b>Role: Designer, Programmer, Writer, Project Lead</b></p>" + 
+  "<p>In the development of Ekter and The Cub I was responsible for gameplay programming including movement and animation. " +
+  "I also took part in the design of levels, enemy behaviors/traits, and our game's final boss fight. " +
+  "As project lead I oversaw that everything was delivered by our team on time, implementation, and encouraging a positive environment " +
+  "where programmers, designers, and artists work together in an efficient manner.</p>"
+ 
+  
+  var starText = 
+  "<h1>Before There Were Stars</h1><p><b>Role: Programmer, Writer</b></p>" + 
+  "<p>Before There Were Stars is a game that revolves around the dialogue development between two characters. In this project there is " +
+  "a star-connecting mechanic that allows the player to reveal constellations in the sky. I was responsible for programming this mechanic, " +
+  "and the dialogue system which is in development. I also co-wrote the script, as it is centered around dialogue-triggering events.</p> "
+  var battleText = 
+    "<h1>Battle Battle Character Design</h1><p><b>Role: Designer</b></p>" + 
+  "<p>As part of a design challenge, I was given a set of rules for a dice game and tasked with making my own character. " +
+  "This included tweaking the existing systems of the characters that already existed, and adding rules to the game. " +
+  "I also sketched for this character, as shown in the picture. This project increased my skills on systems design, " +
+  "as there were an existing pool of designed characters, and I added one that was balanced, but added a different twist to the game.</p>"
+  var idleText = 
+    "<h1>Idle Game Pitch Document</h1><p><b>Role: Designer, Writer</b></p>" + 
+  "<p>Mining Expedition X is an idle game where one acquires valuable magical runes by drilling through the crust of a planet. " +
+  "I created a design document that is an example of how I can communicate a game's goals and systems clearly to developers. " +
+  "As well as creating a generator multiplier system, I wrote about the game's lore and set up a backstory. </p> "
+  var cindText = 
+    "<h1>Cinderella Board Game</h1><p><b>Role: Designer</b></p>" + 
+  "<p>Fish For Your Life is survival board game in which the player starts with an expendable amount of fish and health. " +
+  "I took part in a team of four of designing a survival board game in which the player is entertained by random rolling but still " +
+  "has enough control in the game to feel like they have power. Fish For Your Life is an excitingly paced survival board game "
+  "where players engage in meaningful gameplay.</p>"
+  
+	function ekterInsert () {
+	//document.getElementById('insertTD').innerHTML = "";
+    document.getElementById('insertTD').innerHTML = ekterText;
+}
+
+	function starInsert () {
+	//document.getElementById('insertTD').innerHTML = "";
+    document.getElementById('insertTD').innerHTML = starText;
+}
+
+	function battleInsert () {
+	//document.getElementById('insertTD').innerHTML = "";
+    document.getElementById('insertTD').innerHTML = battleText;
+}
+
+	function idleInsert () {
+	//document.getElementById('insertTD').innerHTML = "";
+    document.getElementById('insertTD').innerHTML = idleText;
+}
+
+	function cindInsert () {
+	//document.getElementById('insertTD').innerHTML = "";
+    document.getElementById('insertTD').innerHTML = cindText;
+}
+
+	function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+</script>
+
+</head>
+
+<body>
+
+<br>
+<br>
+<br>
+
+<h1 align = "center" class = "nameStyle">JOEY        MAZERO</h1>
+<p align = "center" class = "taglineStyle"> Game Designer, Writer, Programmer. </p>
+
+<br>
+
+<div id = "introContainer">  
+	<div class = "introLinks" align = center><a href = "index.html", class = "introLinks">Projects</a></div>
+	<div class = "introLinks" align = center><a href = "writing.html", class = "introLinks">Writing</a></div>
+	<div class = "introLinks" align = center><a href = "about.html", class = "introLinks">About</a></div>
+</div>
+
+<br>
+<br>
+
+<div align = center>
+	<table id = "imageTable">
+	
+	  <tr>
+		<td width="350"></td>
+		<td col = "2" align = "middle" width="350" id = "insertTD"></td>
+		<td width="350"></td>
+	  </tr>
+	  
+	  <tr>
+		<td><input type = "image" src="stars.gif" alt="Before There Were Stars" height="350" width="350" onclick="topFunction();starInsert()"></td>
+		<td><input type = "image" src="ekterName.jpg" alt="Ekter" height="350" width="350" onclick="topFunction();ekterInsert()"></td> 
+		<td><input type = "image" src="genie.jpg" alt="Battle Battle Analysis" height="350" width="350" class = "rotateimg90" onclick="topFunction();battleInsert()"></td>
+	  </tr>
+	  
+	  <tr>
+	    <th>Before There Were Stars</th>
+		<th>Ekter and The Cub</th>
+		<th>Battle Battle Character</th>
+	  </tr>
+	  
+	  <tr>
+		<td><input type = "image" src="fishGame.jpg" alt="Cinderella Board Game" height="350" width="350" onclick="topFunction(); cindInsert()"></td>
+		<td><input type = "image" src="idleGame.jpg" alt="Idle Game Design Document" height="350" width="350" onclick="topFunction(); idleInsert()"></td> 
+		<td><img src="nothing.png" alt="Smiley face" height="350" width="350"></td>
+	  </tr>
+	  
+	  <tr>
+	    <th>Cinderella Board Game</th>
+		<th>Idle Game Design Document</th>
+		<th></th>
+	  </tr>
+	  
+	</table>
+</div>
+
+</body>
+</html>
