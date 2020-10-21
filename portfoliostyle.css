@@ -1,0 +1,121 @@
+#imageTable td {
+  padding: 36px;
+}
+
+body {
+  background-color: #E7DAC4;
+}
+
+
+
+.nameStyle{
+	font-family:monospace, serif;
+	font-size: 55px;
+	line-height: 20%;
+	padding-left: 72px;
+	color:#344C2F;
+}
+
+.aboutPic {
+  padding-top: 25px;
+  padding-left: 325px;
+  float: left;
+}
+
+.introLinks {
+  padding-right: 5px;
+  padding-left: 5px;
+  font-family:monospace, serif;
+  text-decoration: none;
+  color:#344C2F;
+}
+
+.introLinks:hover{
+	font-weight:bold;
+	font-size: 16px;
+	text-shadow: -1.5px -1.5px #0c1c08;
+}
+
+.introLinks:active{
+		font-weight:bold;
+	font-size: 16px;
+	color:maroon;
+}
+
+.nameContainer{
+	float: left;
+}
+
+.slothImage{
+	float: right;
+	padding-top: 215px;
+}
+
+.gameTitle{
+text-indent: 75px;
+	
+font-family:monospace, serif;
+color:#344C2F;
+}
+.gameContents{
+  padding-right: 75px;
+  padding-left: 75px;
+}
+
+.aboutContents{
+  padding-right: 55px;
+  padding-left: 700px;
+  line-height: 1.8;
+  padding-bottom: 800px;
+}
+
+.taglineStyle{
+	padding-left: 75px;
+	line-height : 50%;
+	font-family:arial;
+	color:#344C2F;
+}
+
+iframe {
+    display: block;
+    border-style:none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#introContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 500px;
+    margin: 0 auto;
+	float: right;
+	padding-right: 85px;
+}
+
+.rotateimg90 {
+  -webkit-transform:rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+#aboutTag {
+	padding-left: 25px;
+}
+
+#aboutPar {
+	padding-left: 25px;
+	line-height: 5;
+	font-size:15px;
+}
+
+#meImage  {
+    float: right;
+}
+
+td.description {
+  vertical-align: top;
+}
