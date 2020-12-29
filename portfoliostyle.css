@@ -6,6 +6,13 @@ body {
   background-color: #E7DAC4;
 }
 
+.introBlurb{
+	font-family:monospace, serif;
+	color:#344C2F;
+	padding-left: 190px;
+	padding-right: 190px;
+}
+
 
 
 .nameStyle{
