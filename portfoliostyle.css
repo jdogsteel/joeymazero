@@ -83,6 +83,7 @@ color:#344C2F;
   padding-left: 700px;
   line-height: 1.8;
   padding-bottom: 200px;
+  font-size:20px;
 }
 
 .taglineStyle{
@@ -125,7 +126,6 @@ iframe {
 #aboutPar {
 	padding-left: 25px;
 	line-height: 5;
-	font-size:15px;
 }
 
 #meImage  {
