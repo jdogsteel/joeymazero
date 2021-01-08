@@ -167,10 +167,11 @@ td.description {
 	}
 	.introContainer{
 		padding-top: 100px;
-		padding-right: 165px;
+		padding-right: 180px;
 		text-align: center;
 		float: none;
 		font-size: 40px;
+		width: 700px;
 	}
 	.introBlurb{
 		padding-left: 40px;
