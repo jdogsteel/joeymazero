@@ -39,17 +39,19 @@
 	}
 	.nameStyle{
 		text-align: center;
-		font-size: 70px;
+		font-size: 90px;
 	}
 	.taglineStyle{
 		text-align: center;
-		font-size: 22px;
+		font-size: 35px;
 	}
 	.introContainer{
+		padding-top: 100px;
 		text-align: center;
 		float: none;
-		padding-right: 0px;
-		font-size: 20px;
+		padding-right: 140px;
+		font-size: 40px;
+
 	}
 	.introBlurb{
 		padding-left: 40px;
