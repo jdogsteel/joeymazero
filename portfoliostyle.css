@@ -1,5 +1,82 @@
+.taglineStyle{
+	padding-left: 75px;
+	line-height : 50%;
+	font-family:arial;
+	color:#344C2F;
+}
+
+.nameStyle{
+	font-family:monospace, serif;
+	font-size: 55px;
+	line-height: 20%;
+	padding-left: 72px;
+	color:#344C2F;
+}
+
+.introContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 500px;
+    margin: 0 auto;
+	float: right;
+	padding-right: 85px;
+}
+
+.introBlurb{
+	font-family:monospace, serif;
+	color:#344C2F;
+	padding-left: 190px;
+	padding-right: 190px;
+}
+
+@media only screen and (max-width: 992px){
+	.nameContainer{
+		  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 87%;
+	}
+	.nameStyle{
+		text-align: center;
+		font-size: 70px;
+	}
+	.taglineStyle{
+		text-align: center;
+		font-size: 22px;
+	}
+	.introContainer{
+		text-align: center;
+		float: none;
+		padding-right: 0px;
+		font-size: 20px;
+	}
+	.introBlurb{
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	.introLinks:hover{
+	font-weight:bold;
+	font-size: 30px;
+	text-shadow: -1.5px -1.5px #0c1c08;
+}
+
+.introLinks:active{
+		font-weight:bold;
+	font-size: 30px;
+	color:maroon;
+}
+
+}
+
 #imageTable td {
   padding: 36px;
+}
+
+.logoStyle{
+	float: left; 
+	padding-top: 18px; 
+	padding-left:10px;
 }
 
 img{
@@ -25,23 +102,6 @@ img{
 
 body {
   background-color: #E7DAC4;
-}
-
-.introBlurb{
-	font-family:monospace, serif;
-	color:#344C2F;
-	padding-left: 190px;
-	padding-right: 190px;
-}
-
-
-
-.nameStyle{
-	font-family:monospace, serif;
-	font-size: 55px;
-	line-height: 20%;
-	padding-left: 72px;
-	color:#344C2F;
 }
 
 .aboutPic {
@@ -94,13 +154,6 @@ color:#344C2F;
   font-size:20px;
 }
 
-.taglineStyle{
-	padding-left: 75px;
-	line-height : 50%;
-	font-family:arial;
-	color:#344C2F;
-}
-
 iframe {
     display: block;
     border-style:none;
@@ -109,15 +162,7 @@ iframe {
   width: 50%;
 }
 
-#introContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 500px;
-    margin: 0 auto;
-	float: right;
-	padding-right: 85px;
-}
+
 
 .rotateimg90 {
   -webkit-transform:rotate(90deg);
