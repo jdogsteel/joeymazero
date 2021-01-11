@@ -215,6 +215,7 @@ td.description {
 .zoom1{
 	width: 100px;
 	height: 100px;
+	box-shadow: none;
 }
 .zoomHome{
 		width: 115px;
