@@ -35,7 +35,7 @@ body {
 
 .aboutPic {
   padding-top: 25px;
-  padding-left: 325px;
+  padding-left: 250px;
   float: left;
 }
 
@@ -57,7 +57,7 @@ color:#344C2F;
 
 .aboutContents{
   padding-right: 55px;
-  padding-left: 700px;
+  padding-left: 640px;
   line-height: 1.8;
   padding-bottom: 200px;
   font-size:20px;
@@ -79,19 +79,6 @@ iframe {
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
-}
-
-#aboutTag {
-	padding-left: 25px;
-}
-
-#aboutPar {
-	padding-left: 25px;
-	line-height: 5;
-}
-
-#meImage  {
-    float: right;
 }
 
 td.description {
