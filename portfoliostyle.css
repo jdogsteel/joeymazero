@@ -181,5 +181,14 @@ td.description {
 	width: 150px;
 }
 
+.aboutPic{
+	padding-left: 85px;
+}
+.aboutContents{
+	padding-left: 450px;
+	padding-right: 0px;
+	line-height: 1;
+}
+
 }
 
