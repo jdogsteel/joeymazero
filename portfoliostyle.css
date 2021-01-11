@@ -1,3 +1,7 @@
+p{
+	line-height: 1.8;
+}
+
 #imageTable td {
   padding: 36px;
 }
@@ -9,8 +13,9 @@
 }
 
 img{
-	max-width:100%;
+	max-width: 100%;
 	max-height: 100%;
+	border-radius: 3px;
 }
 
 .centerImage{
@@ -21,11 +26,28 @@ img{
   max-height: 100%; max-width: 100%;
 }
 
+.zoom1 {
+  transition: transform .2s; /* Animation */
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.zoomHome{
+	transition: transform .2s;
+}
+.zoomHome:hover{
+	transform: scale(1.1);
+}
+
 .zoom {
   transition: transform .2s; /* Animation */
 }
 
 .zoom:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.zoom1:hover {
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
@@ -188,6 +210,15 @@ td.description {
 	padding-left: 450px;
 	padding-right: 0px;
 	line-height: 1;
+}
+
+.zoom1{
+	width: 100px;
+	height: 100px;
+}
+.zoomHome{
+		width: 115px;
+	height: 100px;
 }
 
 }
