@@ -216,16 +216,19 @@ td.description {
   padding-bottom: 20px;
   font-size:20px;
   float: right;
+  text-align: center;
 }
 
 .zoom1{
 	width: 100px;
 	height: 100px;
 	box-shadow: none;
+	float: right;
 }
 .zoomHome{
 		width: 115px;
 	height: 100px;
+	float: right;
 }
 
 #imageTable{
