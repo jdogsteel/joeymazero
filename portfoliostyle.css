@@ -74,11 +74,11 @@ color:#344C2F;
 .gameContents{
   padding-right: 10%;
   padding-left: 200px;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .writingContents{
-  padding-right: 30%;
+  padding-right: 20%;
   padding-left: 200px;
   font-size: 19px;
 }
@@ -88,7 +88,8 @@ color:#344C2F;
   padding-left: 640px;
   line-height: 1.8;
   padding-bottom: 200px;
-  font-size:20px;
+  padding-top: 55px;
+  font-size:19px;
 }
 
 iframe {
