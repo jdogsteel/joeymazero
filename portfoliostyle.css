@@ -1,5 +1,5 @@
 p{
-	line-height: 1.8;
+	line-height: 1.4;
 }
 
 #imageTable td {
@@ -72,15 +72,15 @@ font-family:monospace, serif;
 color:#344C2F;
 }
 .gameContents{
-  padding-right: 300px;
-  padding-left: 300px;
+  padding-right: 10%;
+  padding-left: 200px;
   font-size: 20px;
 }
 
 .writingContents{
-  padding-right: 700px;
-  padding-left: 300px;
-  font-size: 20px;
+  padding-right: 30%;
+  padding-left: 200px;
+  font-size: 19px;
 }
 
 .aboutContents{
