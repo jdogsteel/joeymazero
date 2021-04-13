@@ -10,6 +10,7 @@
   <meta name="author" content="SitePoint">
 
   <link rel="stylesheet" href="portfoliostyle.css">
+  <link href="lightboxstyle.css" rel="stylesheet">
 
 </head>
 
@@ -61,7 +62,7 @@ real time and tap on significant landmarks they see through their phone's camera
 <br>
 <br>
 
-<img style = "float: right; padding-left: 50px;" src="images/gif1.gif" alt="Card gif" height="300" width="300" />
+<img style = "float: right; " src="images/gif1.gif" alt="Card gif" height="300" width="300" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" />
 
 
 <h3>My Responsibilities</h3>
@@ -94,7 +95,7 @@ real time and tap on significant landmarks they see through their phone's camera
 <picture class = "centerImage">
     <source media="(min-width: 992px)" srcset="images/trythis.PNG">
     <source media="(min-width: 100px)" srcset="images/slothVert.PNG">
-    <img src="images/slothVert.PNG">
+    <img src="images/slothVert.PNG" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
 </picture>
 
 <p>
@@ -115,6 +116,94 @@ I made sure that the history behind it was relevant to showing off IU's most int
 <br>
 <br>
 <br>
+
+<!-- Image viewer -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/gif1.gif" style="width:42%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/sloth.jpg" style="width:60%">
+    </div>
+	
+	<div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/sloth2.png" style="width:40%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/sloth1.png" style="width:40%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="images/gif1.gif" style="width:50%" onclick="currentSlide(1)" alt="Oswald's shadow dialogue">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/sloth.jpg" style="width:65%" onclick="currentSlide(2)" alt="Lorraine's shadow">
+    </div>
+	    <div class="column">
+      <img class="demo cursor" src="images/sloth2.png" style="width:45%" onclick="currentSlide(3)" alt="Oswald's shadow dialogue">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/sloth1.png" style="width:45%" onclick="currentSlide(4)" alt="Lorraine's shadow">
+    </div>
+  </div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
 <p><center>
 <a href = "index.html" ><img src="images/homeIcon.png" alt="Projects" height="35" width="40" class = "zoomHome"/></a>
 <a href = "mailto: joemazero337@gmail.com" ><img src="images/emaillogo.png" alt="E-mail" height="35" width="35" class = "zoom1"/></a>  

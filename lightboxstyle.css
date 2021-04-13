@@ -1,6 +1,6 @@
 
 * {
-  box-sizing: border-box;
+
 }
 
 .row > .column {
@@ -20,6 +20,7 @@
 
 /* The Modal (background) */
 .modal {
+	  box-sizing: border-box;
   display: none;
   position: fixed;
   z-index: 1;
